@@ -1,3 +1,5 @@
+%AW: looks good. 1/1. see comment below. 
+
 %Inclass assignment 8
 
 %Using the swalign function
@@ -11,6 +13,9 @@ swalign(seq1, seq2, 'Alphabet', 'nt', 'Showscore', true);
 % and explain the results.
 [score, align, start] =swalign(seq1, seq2, 'Alphabet', 'nt', 'Showscore', true, 'GapOpen', 1000);
 [score, align, start] =swalign(seq1, seq2, 'Alphabet', 'nt', 'Showscore', true, 'GapOpen', 0.001);
+
+
+%AW: correct. Note the result of having fewer gaps is more mismatches. 
 
 %--> when gap open is much greater than default, the number of gaps in
 %the aligned sequences decrease. Gap open penality is big and therefore the
